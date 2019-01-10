@@ -96,31 +96,4 @@ $ screen -r minecraft
 
 The server is able to be configured through the many files such as permissions, and ops. The setup is extremely important, as it cannot be changed. You can also add plugins to the plugins folder, and add any other files you'd like such as spigot.yml, or a world. The website can also be configured from opt/index.rhtml 
 
-**Additional Notes** The server version/software can be changed from bin/compile, and replace ```minecraft_url="https://cdn.getbukkit.org/spigot/spigot-1.8-R0.1-SNAPSHOT-latest.jar"```. Additionally, the server already contains EssentialsX and ViaVersion (For Version Support). 
-
-Create a new directory and add a eula.txt file with the following contents:
-eula=true
-
-git init
-git add eula.txt
-git commit -m "First commit"
-
-heroku apps:create my-spigot-server --region eu
-heroku buildpacks:add heroku/jvm
-heroku buildpacks:add https://github.com/anton-bozhina/heroku-minecraft
-
-heroku config:set NGROK_API_TOKEN="5MbHS7thPFHKTzDxxEEBY_VmPEXr4cnDR6xTNqcV4Y"
-
-git push heroku master
-
-heroku open
-
-heroku logs
-
-heroku ps:exec
-
-screen -r minecraft
-
-
-git commit --allow-empty -m "empty commit"
-git push heroku master
+**Additional Notes** The server version/software can be changed from bin/compile, and replace ```minecraft_url="https://cdn.getbukkit.org/spigot/spigot-1.8-R0.1-SNAPSHOT-latest.jar"```. Additionally, the server already contains EssentialsX and ViaVersion (For Version Support).
