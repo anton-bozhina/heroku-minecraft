@@ -63,7 +63,7 @@ unzip ngrok.zip -d $BUILD_DIR/bin > /dev/null 2>&1
 echo "done"
 
 minecraft_version=${MINECRAFT_VERSION:-"1.13.2"}
-minecraft_url="https://papermc.io/ci/job/Paper-1.13/lastSuccessfulBuild/artifact/paperclip.jar"
+minecraft_url="https://papermc.io/ci/job/Paper-1.13/498/artifact/paperclip-498.jar"
 
 echo -n "-----> Installing Minecraft ${minecraft_version}... "
 curl -o minecraft.jar -s -L $minecraft_url
